@@ -1,0 +1,12 @@
+a new file is made!Heart Rate: 87 bpm, SpO2: 79.00%
+Heart Rate: 48 bpm, SpO2: 79.00%
+Heart Rate: 11 bpm, SpO2: 79.00%
+Heart Rate: 78 bpm, SpO2: 80.00%
+Heart Rate: 104 bpm, SpO2: 81.00%
+Heart Rate: 100 bpm, SpO2: 81.00%
+Heart Rate: 54 bpm, SpO2: 81.00%
+Heart Rate: 92 bpm, SpO2: 81.00%
+Heart Rate: 109 bpm, SpO2: 81.00%
+Heart Rate: 125 bpm, SpO2: 81.00%
+Heart Rate: 117 bpm, SpO2: 81.00%
+Heart Rate: 106 bpm, SpO2: 82.00%

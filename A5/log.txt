@@ -1,0 +1,4 @@
+a new file is made!
+Temperature: 28.00°C
+Temperature: 28.00°C
+Temperature: 89.94°C
