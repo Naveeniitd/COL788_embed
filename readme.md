@@ -79,3 +79,64 @@ This repository contains the details and instructions for completing the assignm
    - Ensure `main.h` contains definitions for `SD_SPI_HANDLE` (e.g., `hspi2`), `SD_CS_GPIO_Port`, and `SD_CS_Pin`.
    - Configure SPI driver speeds and prescalars in `user_diskio_spi.c` for optimal operation.
 
+
+
+Here's a README outline for Assignments 4 and 5, focusing on integrating previous work, adding new functionality, and leveraging FreeRTOS middleware for task management and synchronization. The README provides detailed steps and instructions for students on configuring and combining code effectively.
+
+---
+
+
+## Assignment 4 
+
+### Overview
+- **Goal**: Combine code from Assignments 2 and 3 to sense temperature and SpO2 values, compute reliable results, and write the data to a file on an SD card.
+
+### Tasks:
+1. Integrate the MAX30102 sensor code (Assignment 2) and SD card file writing functionality (Assignment 3) in a single project.
+2. Synchronously read temperature and SpO2 values, process these for accuracy, and store the results in an SD card file.
+3. Implement this functionality in a simple `while` loop in the `main.c` file.
+
+### Steps:
+1. **Project Setup**:
+   - Create a new STM32CubeIDE project and enable necessary peripherals (I2C for the MAX30102 sensor and SPI for the SD card).
+   - Include all relevant files from Assignments 2 (`MAX30102 sensor` code) and 3 (`SD card` driver files).
+
+2. **File Placement**:
+   - Place `.h` files in `Core/Inc` and `.c` files in `Core/Src`.
+   - Ensure any shared variables or constants are appropriately defined and initialized.
+
+
+
+## Assignment 5
+
+### Overview
+- **Goal**: Use FreeRTOS to create tasks for sensing, processing, and writing data to an SD card, with proper synchronization mechanisms and interrupt handling.
+
+### Tasks:
+1. **Part A**: Create FreeRTOS tasks for sensing, processing, and SD card writing.
+
+
+2. **Part B**: Utilize the hardware temperature interrupt from Assignment 2 and handle it in a FreeRTOS task.
+
+
+### Steps:
+
+#### Part A: FreeRTOS Task Creation
+1. **Setup**:
+   - Create a new STM32CubeIDE project with FreeRTOS middleware enabled.
+   - Configure I2C and SPI peripherals as required for the MAX30102 sensor and SD card.
+
+2. **Task Creation**:
+
+   - Implement inter-task communication and synchronization using FreeRTOS mechanisms such as queues, semaphores, or mutexes to ensure proper coordination between tasks.
+   - Ensure that writing to the SD card only occurs when new data has been received and fully processed.
+
+
+#### Part B: Interrupt Handling with FreeRTOS
+1. **Interrupt Configuration**:
+   - Utilize the hardware temperature interrupt from Assignment 2.
+   - Create a FreeRTOS task to handle the processing and SD card writing triggered by the interrupt.
+   - Ensure that the task performs slower processing work after receiving an interrupt signal.
+
+
+
