@@ -139,4 +139,8 @@ Here's a README outline for Assignments 4 and 5, focusing on integrating previou
    - Ensure that the task performs slower processing work after receiving an interrupt signal.
 
 
+![Setup](A5/setup_picture.jpeg)
+
+![Diagram](A5/setup_diagram.jpeg)
+
 
